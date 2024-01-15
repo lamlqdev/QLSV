@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+   <servlet>
+        <servlet-name>QtvController</servlet-name>
+        <servlet-class>Controllers.QtvController</servlet-class>
+        <multipart-config>
+	        <location>C:\upload_folder</location>
+	        <max-file-size>20848820</max-file-size>
+	        <max-request-size>418018841</max-request-size>
+	        <file-size-threshold>1048576</file-size-threshold>
+	    </multipart-config>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>QtvController</servlet-name>
+        <url-pattern>/Qtv/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>Controllers.LoginController</servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>Controllers.LogoutController</servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/logout/*</url-pattern>
+    </servlet-mapping>
+	
+	<servlet>
+        <servlet-name>CTSVController</servlet-name>
+        <servlet-class>Controllers.CTSVController</servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>CTSVController</servlet-name>
+        <url-pattern>/Ctsv/*</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SVController</servlet-name>
+        <servlet-class>Controllers.SVController</servlet-class>
+     </servlet>
+     <servlet-mapping>
+        <servlet-name>SVController</servlet-name>
+        <url-pattern>/SV/*</url-pattern>
+    </servlet-mapping>
+	
+	<context-param>
+        <param-name>host</param-name>
+        <param-value>smtp.gmail.com</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>port</param-name>
+        <param-value>587</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>phambathanh1803@gmail.com</param-value>
+    </context-param>
+ 
+    <context-param>
+        <param-name>pass</param-name>
+        <param-value>trkw ybqa utbh ojzi</param-value>
+    </context-param>
+ 
+    <welcome-file-list>
+        <welcome-file>EmailForm.jsp</welcome-file>
+    </welcome-file-list>
+    
+</web-app>

@@ -1,0 +1,35 @@
+@charset "ISO-8859-1";
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tables-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 700px; /* Đặt chiều cao tối đa của bảng */
+    position: relative;
+}
+
+.table-wrapper {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/* Định dạng bảng */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+ td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+

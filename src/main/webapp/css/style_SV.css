@@ -1,0 +1,249 @@
+@charset "UTF-8";
+.wrapper {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #00558c 0%, #00558c 35%, #00558e 36%, #005A94 40%, #00659f 50%, #0074b0 57%, #0076b4 59%, #007cbb 62%, #0085c2 80%, #0187c6 85%, #0187c6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-width-img {
+	overflow-clip-margin: content-box;
+    width: 1004px;
+    height: 143px;
+}
+
+/* Style ảnh trang chính */
+.main-page{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-container {
+    width: 100%;
+    margin-top: 0px;
+}
+
+.logout-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.logout-buttons button {
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.sidebarnew {
+    flex: 0 0 240px;
+    width: 240px;
+    height: 70vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.menu li {
+    margin-bottom: 20px; 
+    border-bottom: 1px dashed #ccc; /* Đường cắt cách mỗi mục */
+    padding-bottom: 5px; /* Khoảng cách giữa đường cắt và văn bản */
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #ff0000;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    margin: 40px 0 0 30px;
+    border-style: solid;
+    position: relative;
+}
+
+/* Hiển thị ảnh trang chủ */
+.main-content_Page {
+	flex: 1;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    border-style: solid;
+    position: relative;
+}
+
+/* Style đăng nhập */
+.login {
+	width: 500px;
+	height: 370px;
+	position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-login{
+	margin-bottom: 0.5rem;
+}
+
+.tables-container {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 700px; /* Đặt chiều cao tối đa của bảng */
+    position: relative;
+}
+
+.button-contain {
+    position: absolute; /* Đặt vị trí tuyệt đối */
+    bottom: 0; /* Hiển thị ở cuối div cha */ 
+    width: 100%; /* Chiều rộng tối đa */
+    margin-bottom: 30px; /* Khoảng cách với nội dung trên */
+}
+
+/* CSS cho nút */
+.button-contain button {
+    margin-left: 5px; /* Khoảng cách giữa các nút */
+    font-size: 20px;
+    height: 40px;
+}
+
+fieldset legend {
+    padding: 0.2em 0.5em;
+    border: none;
+ }
+ 
+.my-legend {
+    width: auto; /* Đặt giá trị mong muốn của bạn ở đây */
+}
+
+.table-custom {
+    font-size: 1.2rem; /* Đặt giá trị mong muốn của bạn ở đây */
+}
+
+/*Tạo frame cha chứa 2 frame con*/
+.frame-container {
+    display: flex; /* Sắp xếp các label-frame theo hàng ngang */
+    justify-content: space-between; /* Tạo khoảng cách giữa các label-frame */
+}
+
+.label-frame {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    width: 35%;
+    margin-right: 90px;
+    margin-left: 80px;
+	}
+
+.label-frame h2 {
+	    margin-top: 0;
+	}
+	
+.button {
+	    padding: 8px 16px;
+	    margin-right: 20px;
+	    margin-left: 20px;
+	    background-color: #3498db;
+	    color: #fff;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 4px;
+	}
+
+/* Style cho đổi mật khẩu button */
+.change-password-button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+	}
+	
+/* Style cho chỉnh sửa và lưu */
+.edit-button, .save-button, .cancel-button {
+    margin-right: 10px;
+}
+
+#role {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-button {
+    display: inline-block;
+}
+
+
+#submit-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-link {
+    align-self: flex-start;
+}
+
+#right-button {
+    align-self: flex-end;
+}
+
+/* Đổi màu menu list hiển thị trên trang */
+.menu li a.special-link {
+    color: blue;
+    font-weight: bold;
+}
+
+.menu li a.special-link:hover {
+    color: #ff0000; /* Thay đổi giá trị này theo màu bạn muốn khi di chuột qua */
+}
+
+/*Tách biệt thead và tbody để không bị cuộn lẫn nhau*/
+.table thead {
+	position: sticky;
+	top: 0;
+	background: white;
+}
+
+.table thead, .table tbody {
+   display: block;
+}
+.table thead tr, .table tbody tr {
+   display: table;
+   width: 100%;
+   table-layout: fixed;
+}
